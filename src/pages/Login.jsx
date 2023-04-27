@@ -1,31 +1,27 @@
 import React, { Fragment } from 'react'
-import { logo } from '../utils/constants/images'
-import { Link } from 'react-router-dom'
+import { logo } from '../utils/constants/images';
+import { Link } from 'react-router-dom';
+
+import { painter } from '../utils/constants/images';
 
 const Login = () => {
   return (
     <Fragment>
-        <div className="w-full h-screen bg-blue-50 flex items-center justify-center">
-            <div className="flex h-[400px] items-center">
-                <div className="bg-blue-400 h-full flex flex-col justify-center py-[120px] px-[80px]">
-                    <span className="w-[200px]"><img className="w-full" src={logo} alt="bookverse" /></span>
-                    <p className="text-slate-200">Take your level a step futher...</p>
-                </div>
-                <div className="px-[40px] bg-slate-50 h-full flex flex-col justify-center">
-                    <div className="flex gap-2 mb-8">
-                        <span className="py-3 block px-4 bg-white shadow-md rounded-md">Login with Google</span>
-                        <span className="py-3 block px-4 bg-black shadow-md text-white rounded-md">Login with Apple</span>
+        <div className="w-full bg-slate-50 h-screen flex items-center justify-center">
+            <div className="flex flex-col lg:flex-row lg:px-0 lg:max-w-4xl lg:mx-auto">
+                <div className="w-full lg:w-[40%] h-full">
+                    <div className="w-[100%] h-full">
+                        <img src={painter} alt="man holding brush" className="w-[inherit] h-full object-cover" />
                     </div>
-                    <form action="">
-                        <div className="w-full">
-                            <input className="block w-full px-4 py-5 text-[14px]" placeholder="Your Email" type="text" name="" id="" />
+                </div>
+                <div className="bg-white w-full lg:w-[60%] flex items-center max-h-[inherit]">
+                    <form action="" className="py-[60px] px-10 lg:px-[80px]">
+                        <h2 className="text-3xl text-slate-600 font-semibold mb-5">Login to continue <span className="text-[40px] text-blue-400">.</span></h2>
+                        <div className="flex flex-col gap-5 lg:gap-8 py-4">
+                            <input type="email" name="" id="" placeholder="Your email" className="w-full border-b-2 focus:border-blue-400 outline-none py-3 px-2 "/>
+                            <input type="password" name="" id="" placeholder="Password" className="w-full border-b-2 focus:border-blue-400 outline-none py-3 px-2 "/>
                         </div>
-                        <div className="w-full mt-4">
-                            <input className="block w-full px-4 py-5 text-[14px]" placeholder="Your Password" type="password" name="" id="" />
-                        </div>
-
-                        <div className="w-full"><button className="py-4 rounded-md px-4 bg-blue-400 text-white text-center block w-full mt-4" type="submit">Login</button></div>
-                        <span className="font-regular text-center block mt-2 text-[12px]">Dont have and account? <Link to={"/signup"} className="text-slate-600 font-medium text-[12px] inline hover:text-blue-400 transition-all">Sign Up</Link></span>
+                        <div className="w-full mt-8"><button className="py-4 text-white bg-blue-400 block w-full rounded-full font-medium" type="submit">Start my journey</button></div>
                     </form>
                 </div>
             </div>
