@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <Fragment>
         <div className="bg-blue-900 py-[80px] lg:py-[100px]">
-            <div className="px-6 lg:max-w-4xl xl:max-w-5xl lg:px-0 mx-auto">
+            <div className="px-6 lg:max-w-4xl xl:max-w-6xl lg:px-0 mx-auto">
                 <div className="lg:max-w-2xl xl:max-w-2xl">
                     <h2 className="text-[30px] mb-4 font-semibold text-slate-50">Take a bold step, with <strong>Bookverse</strong><span className="text-[40px] ml-1 text-blue-400">.</span></h2>
                     <p className="text-slate-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, blanditiis! Illum impedit amet dolorum magnam nobis numquam quod pariatur repudiandae!</p>
